@@ -40,7 +40,7 @@ navigator.clipboard.readText()
       i_body = text.indexOf("###Twitter本文ココから###", i_sch) + 19;
       i_img = text.indexOf("###Twitter本文ココまで###", i_body);
       post['body'] = text.substring(i_body, i_img).replace(/\r?\n/g, '');
-      img = text.substring(i_img + 56, i_img + 80);
+      img = text.substring(i_img + 56, i_img + 95);
 
       // imgにjpgの文字が見つかればそこまで切る。なければブランクにする。
       if (img.indexOf('jpg') > 0) {
